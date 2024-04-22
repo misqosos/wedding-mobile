@@ -6,16 +6,18 @@
 <div class="frame-domka">
     <!-- formular -->
     <div class="form-domka">
-        <form id="domka-form" style="border-style: dashed; text-align: center;">
+        <form id="domka-form">
 
             <div id="1" title="surname">
                 <p>Ako sa volám priezviskom?</p>
-                <div class="form-options-radio" style="border-style: dashed;">
-                    <label><input type="radio" name="surname" value="Kováčová"/> Kováčová</label> <br>
-                    <label><input type="radio" name="surname" value="Fidorková" /> Fidorková</label> <br>
-                    <label><input type="radio" name="surname" value="Kaštanová" /> Kaštanová</label> <br>
-                    <label><input type="radio" name="surname" value="Fedorková" /> Fedorková</label> <br>
-                    <label><input type="radio" name="surname" value="Stolárová" /> Stolárová</label> 
+                <div style="display: flex; justify-content: center;">
+                    <div class="form-options-radio">
+                        <label><input type="radio" name="surname" value="Kováčová"/> Kováčová</label> <br>
+                        <label><input type="radio" name="surname" value="Fidorková" /> Fidorková</label> <br>
+                        <label><input type="radio" name="surname" value="Kaštanová" /> Kaštanová</label> <br>
+                        <label><input type="radio" name="surname" value="Fedorková" /> Fedorková</label> <br>
+                        <label><input type="radio" name="surname" value="Stolárová" /> Stolárová</label> 
+                    </div>
                 </div>
             </div>
             
@@ -28,12 +30,14 @@
             
             <div id="3" title="email" style="display: none;">
                 <p>Kam mi môžeš napísať e-mailík?</p>
-                <div class="form-options-radio">
-                    <label><input type="radio" name="email" value="domkasponka@gmail.com" /> domkasponka&#64;gmail.com</label> <br>
-                    <label><input type="radio" name="email" value="fedorkova487@zoznam.sk" /> fedorkova487&#64;zoznam.sk</label> <br>
-                    <label><input type="radio" name="email" value="dominika.fedorkova1@gmail.com" /> dominika.fedorkova1&#64;gmail.com</label> <br>
-                    <label><input type="radio" name="email" value="dominicQa19@azet.sk" /> dominicQa19&#64;azet.sk</label> <br>
-                    <label><input type="radio" name="email" value="maledievcatko@centrum.sk" /> maledievcatko&#64;centrum.sk</label> 
+                <div style="display: flex; justify-content: center;">
+                    <div class="form-options-radio">
+                        <label><input type="radio" name="email" value="domkasponka@gmail.com" /> domkasponka&#64;gmail.com</label> <br>
+                        <label><input type="radio" name="email" value="fedorkova487@zoznam.sk" /> fedorkova487&#64;zoznam.sk</label> <br>
+                        <label><input type="radio" name="email" value="dominika.fedorkova1@gmail.com" /> dominika.fedorkova1&#64;gmail.com</label> <br>
+                        <label><input type="radio" name="email" value="dominicQa19@azet.sk" /> dominicQa19&#64;azet.sk</label> <br>
+                        <label><input type="radio" name="email" value="maledievcatko@centrum.sk" /> maledievcatko&#64;centrum.sk</label> 
+                    </div>
                 </div>
             </div>
             
@@ -46,53 +50,63 @@
             
             <div id="5" title="hobbies" style="display: none;">
                 <p>Moje obľúbené činnosti?</p>
-                <div class="form-options-radio">
-                    <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Pečenie"/> Pečenie</label> <br>
-                    <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Tobogány" /> Tobogány</label> <br>
-                    <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Snowboard" /> Snowboard</label> <br>
-                    <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Túry" /> Túry</label> <br>
-                    <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Rozprávanie" /> Rozprávanie</label> <br>
-                    <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Chodenie po obchodoch" /> Chodenie po obchodoch</label> <br>
-                    <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Mitko" /> Mitko</label>
+                <div style="display: flex; justify-content: center;">
+                    <div class="form-options-radio">
+                        <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Pečenie"/> Pečenie</label> <br>
+                        <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Tobogány" /> Tobogány</label> <br>
+                        <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Snowboard" /> Snowboard</label> <br>
+                        <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Túry" /> Túry</label> <br>
+                        <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Rozprávanie" /> Rozprávanie</label> <br>
+                        <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Chodenie po obchodoch" /> Chodenie po obchodoch</label> <br>
+                        <label><input type="checkbox" name="hobbies" onchange="addToArray(event, 'hobbies')" value="Mitko" /> Mitko</label>
+                    </div>
                 </div>
             </div>
             
             <div id="6" title="hairColor" style="display: none;">
                 <p>Farba mojich nádherných vláskov?</p>
-                <div class="form-options-radio">
-                    <label><input type="radio" name="hairColor" value="Blond" /> Blond</label> <br>
-                    <label><input type="radio" name="hairColor" value="Hnedá" /> Hnedá</label> <br>
-                    <label><input type="radio" name="hairColor" value="Čierna" /> Čierna</label> <br>
-                    <label><input type="radio" name="hairColor" value="Červená" /> Červená</label> 
+                <div style="display: flex; justify-content: center;">
+                    <div class="form-options-radio">
+                        <label><input type="radio" name="hairColor" value="Blond" /> Blond</label> <br>
+                        <label><input type="radio" name="hairColor" value="Hnedá" /> Hnedá</label> <br>
+                        <label><input type="radio" name="hairColor" value="Čierna" /> Čierna</label> <br>
+                        <label><input type="radio" name="hairColor" value="Červená" /> Červená</label> 
+                    </div>
                 </div>
             </div>
             
             <div id="7" title="height" style="display: none;">
                 <p>Aký vysoký som krpec?</p>
-                <div class="form-options-radio">
-                    <label><input type="radio" name="height" value="158" /> 158 cm</label> <br>
-                    <label><input type="radio" name="height" value="150" /> 150 cm</label> <br>
-                    <label><input type="radio" name="height" value="168" /> 168 cm</label> <br>
-                    <label><input type="radio" name="height" value="163" /> 163 cm</label> 
+                <div style="display: flex; justify-content: center;">
+                    <div class="form-options-radio">
+                        <label><input type="radio" name="height" value="158" /> 158 cm</label> <br>
+                        <label><input type="radio" name="height" value="150" /> 150 cm</label> <br>
+                        <label><input type="radio" name="height" value="168" /> 168 cm</label> <br>
+                        <label><input type="radio" name="height" value="163" /> 163 cm</label> 
+                    </div>
                 </div>
             </div>
             
             <div id="8" title="favColor" style="display: none;">
                 <p>Moja obľúbená farba?</p>
-                <div class="form-options-radio">
-                    <label><input type="radio" name="favColor" value="Hnedá" /> Hnedá</label> <br>
-                    <label><input type="radio" name="favColor" value="Ružová" /> Ružová</label> <br>
-                    <label><input type="radio" name="favColor" value="Čierna" /> Čierna</label> <br>
-                    <label><input type="radio" name="favColor" value="Žltá" /> Žltá</label> <br>
-                    <label><input type="radio" name="favColor" value="Červená" /> Červená</label> 
+                <div style="display: flex; justify-content: center;">
+                    <div class="form-options-radio">
+                        <label><input type="radio" name="favColor" value="Hnedá" /> Hnedá</label> <br>
+                        <label><input type="radio" name="favColor" value="Ružová" /> Ružová</label> <br>
+                        <label><input type="radio" name="favColor" value="Čierna" /> Čierna</label> <br>
+                        <label><input type="radio" name="favColor" value="Žltá" /> Žltá</label> <br>
+                        <label><input type="radio" name="favColor" value="Červená" /> Červená</label> 
+                    </div>
                 </div>
             </div>
             
             <div id="9" title="sentFirstMessage" style="display: none;">
-                <p>Napísala som môjmu milému ako prvá?</p>
-                <div class="form-options-radio">
-                    <label><input type="radio" name="sentFirstMessage" value=1 /> Áno</label> <br>
-                    <label><input type="radio" name="sentFirstMessage" value=0 /> Nie</label> 
+                <p>Napísala som môjmu milému<br> ako prvá?</p>
+                <div style="display: flex; justify-content: center;">
+                    <div class="form-options-radio">
+                        <label><input type="radio" name="sentFirstMessage" value=1 /> Áno</label> <br>
+                        <label><input type="radio" name="sentFirstMessage" value=0 /> Nie</label> 
+                    </div>
                 </div>
             </div>
         </form>
