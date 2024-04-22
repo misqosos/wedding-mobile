@@ -9,12 +9,11 @@
 
 .form-domka {
     position: fixed;
-    /* top: 25vh;  */
-    /* left: 34vh; */
     width: auto;
+    max-width: 93%;
     text-align: center;
     height: auto;
-    font-size: 2vh;
+    font-size: 3vh;
     font-family: 'Lobster';
     color: #d9a74a;
     -webkit-text-stroke-width: 0.5px;
@@ -33,13 +32,11 @@
 }
 
 .form-options-radio {
-  /* position: absolute;  */
-  /* left: 2vh; */
   text-align: left;
+  width: fit-content;
 }
 
 .form-options-date {
-  /* position: absolute;  */
   width: 100%;
   text-align: center;
 }
@@ -48,11 +45,11 @@
   background: none;
 	border: none;
   position: absolute; 
-  right: -11vh; 
-  top: 2.5vh;
+  right: 0; 
+  bottom: 0;
   display: flex;
   align-items: center;
-  font-size: 1vh;
+  font-size: 2vh;
   font-family: 'Lobster';
   cursor: pointer;
   color: rgb(218, 98, 12);
@@ -67,12 +64,12 @@
 
 .home-button {
   position: fixed; 
-  left: 8vh; 
-  top: 8vh;
+  left: 40vw; 
+  top: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1vh;
+  font-size: 2vh;
   font-family: 'Lobster';
   cursor: pointer;
   color: #d9a74a;
@@ -133,15 +130,10 @@ input[type=text] {
   color: #F082AC;
   cursor: pointer;
   font-family: 'Lobster';
-  font-size: 1.5vh;
-  height: 2vh;
-  padding: 2vh 2vh;
-  position: absolute;
-  bottom: -3vh;
-  left: 10.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 2.5vh;
+  height: auto;
+  padding: 2vh;
+  text-align: center;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
   -webkit-text-stroke-width: 1px;
@@ -165,8 +157,6 @@ input[type=text] {
 .icon {
   position: relative;
   font-size: 25vh;
-  /* left: 6vh; */
-  /* top: 0; */
   -webkit-text-stroke-width: 1vh;
   -webkit-text-stroke-color: black;
 }

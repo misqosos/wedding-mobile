@@ -6,11 +6,11 @@
 <div class="frame-domka">
     <!-- formular -->
     <div class="form-domka">
-        <form id="domka-form">
+        <form id="domka-form" style="border-style: dashed; text-align: center;">
 
             <div id="1" title="surname">
                 <p>Ako sa volám priezviskom?</p>
-                <div class="form-options-radio"> 
+                <div class="form-options-radio" style="border-style: dashed;">
                     <label><input type="radio" name="surname" value="Kováčová"/> Kováčová</label> <br>
                     <label><input type="radio" name="surname" value="Fidorková" /> Fidorková</label> <br>
                     <label><input type="radio" name="surname" value="Kaštanová" /> Kaštanová</label> <br>
@@ -96,14 +96,18 @@
                 </div>
             </div>
         </form>
-        <!-- if($questionNumber == 9 && !$formSubmitted) -->
-        <button onclick="onSubmit()" class="submit-button" style="display: none;" id="submit-button">Vyhodnotiť</button>
 
         <!-- ($questionNumber < 9 && !$isSadDomka && !$isHappyDomka) -->
+        <br><br>
         <button class="next-button" id="next-button" onclick="nextQuestion()">
             <a>Ďalšia otázka</a>&nbsp;&nbsp;&nbsp;
-            <i class="fa fa-arrow-right" style="font-size: 2vh;" aria-none="true"></i>
+            <i class="fa fa-arrow-right" style="font-size: 3vh;" aria-none="true"></i>
         </button>
+        
+        <!-- if($questionNumber == 9 && !$formSubmitted) -->
+        <div style="display: none;" id="submit-button">
+            <button onclick="onSubmit()" class="submit-button">Vyhodnotiť</button>
+        </div>
     </div>
 
     <!-- vyhodnocovacie veci -->
