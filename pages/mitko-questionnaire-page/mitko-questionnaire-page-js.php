@@ -68,7 +68,7 @@ function nextQuestion() {
     setElementVisibility(this.questionNumber.toString(), true);
     if (this.questionNumber < 9) {
       setElementVisibility('next-button', true, 'flex');
-    } else { setElementVisibility('submit-button', true, 'flex'); }
+    } else { setElementVisibility('submit-button', true); }
   }, 1000);
 }
 
